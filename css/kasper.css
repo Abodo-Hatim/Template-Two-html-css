@@ -2,6 +2,7 @@
     :root{
         --main-color : #19c8fa; 
         --transparent-color: rgb(15 116 143 / 70%);
+        --section-padding: 100px;
     }
 /* * end variabel */
 
@@ -58,10 +59,7 @@ ul{
 /* ! End Global Rulse */
 
 
-/* ! start coùponent */
-.section{
-    padding: 100px;
-}
+/* ! start component */
 
     .main-heading{
         text-align: center;
@@ -103,7 +101,7 @@ ul{
         color: #777;
 
     }
-/* ! end coùponent */
+/* ! end component */
 
 
 
@@ -310,7 +308,48 @@ header nav .toggle-menu{
 /* ! end landing */
 
 
-/* ! start heading */
-.section {}
-.section .main-heading{}
-/* ! end heading */
+/* ! start Services */
+
+.services{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding) ;
+}
+
+.services .serv-box{
+    display: flex;
+}
+
+.services .serv-box i {
+    margin-right: 50px;
+}
+.services .serv-box h3 {
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+.services .serv-box p {
+    line-height: 2;
+    color: #777;
+}
+
+@media (min-width : 768px) {
+    .services .serv-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(450px , 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    }
+}
+
+
+@media (max-width : 767px ){
+    .services .serv-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .services .serv-box i{
+        margin: 0 0 30px;
+    }
+}
+/* ! end Services */
