@@ -931,3 +931,111 @@ header nav .toggle-menu{
 
 
 /* ! end Quote */
+
+
+
+/* ! start pracing */
+.pracing{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+
+.pracing .plans{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    gap: 30px;
+}
+
+
+.pracing .plans .plan{
+    background-color: #fcfcfc;
+    text-align: center;
+}
+.pracing .plans .plan .head{
+    padding: 40px 20px ;
+    border-top: 1px solid var(--main-color) ;
+    border-bottom: 1px solid var(--main-color) ;
+}
+.pracing .plans .plan .head h3{
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.pracing .plans .plan .head span{
+    font-size: 60px;
+    font-weight: bold;
+}
+.pracing .plans .plan .head span::before{
+    content: "$";
+    font-size: 25px;
+    font-weight: normal;
+    position: relative;
+    top: -40px;
+    margin-right: 15px;
+}
+.pracing .plans .plan .head span::after{
+    content: "/Monthe";
+    font-size: 15px;
+    position: relative;
+    right: -10px;
+}
+
+
+
+.pracing .plans .plan ul{
+    border-bottom: 1px solid var(--main-color);
+}
+
+
+.pracing .plans .plan ul li{
+    padding: 25px;
+    position: relative;
+}
+
+
+.pracing .plans .plan ul li:not(:last-child)::after{
+    content: "";
+    width: 140px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+.pracing .plans .plan .foot a{
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+
+.pracing .contact-text{
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 20px;
+}
+
+.pracing .contact-link{
+    display: block;
+    padding: 15px 30px;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* ! end pracing */
